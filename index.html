@@ -9,8 +9,8 @@
 <body>
     <div id="root">
         <ul class="e-mails_list">
-            <li class="e-mail_address">
-                
+            <li class="e-mail_address" v-for="emailAddress in emailAddresses">
+                {{emailAddress}}
             </li>
         </ul>
     </div>
