@@ -8,7 +8,8 @@
 </head>
 <body>
     <div id="root">
-        <ul class="e-mails_list">
+        <!-- V-IF to make all emailAddresses appear once they have all been generated. -->
+        <ul class="e-mails_list" v-if="emailAddresses.length === 10"> 
             <li class="e-mail_address" v-for="emailAddress in emailAddresses">
                 {{emailAddress}}
             </li>
